@@ -1,2 +1,5 @@
 hw*.txt
 *.zip
+/__pycache__
+/*env
+/.vscode
