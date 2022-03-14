@@ -1,5 +1,6 @@
 hw*.txt
+*.txt
 *.zip
-/__pycache__
-/*env
-/.vscode
+w4_kinematics/class3/__pycache__
+w4_kinematics/class3/*env
+w4_kinematics/class3/.vscode
