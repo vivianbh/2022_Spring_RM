@@ -1,1 +1,1 @@
-# 2022_Spring_RM
+# 2022 Spring Course - Robotics: Multirotors
