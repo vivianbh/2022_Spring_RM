@@ -8,3 +8,9 @@
 ```
 	python hw3.py
 ```
+
+### 環境
+python environment required:
+- numpy
+- matplotlib==3.1.2
+- PyQt5==5.9.2
