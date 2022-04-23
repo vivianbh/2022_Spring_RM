@@ -8,8 +8,8 @@ function [R_d] = LinearOptimization(P_after, Np, P_origin)
     % implement your code here
 
     % matrix_change[]
-cd
-        
-    R_d = (P_origin .* P_origin) ./ (P_origin .* P_after);
+       
+    R_Np = inv(P_after' * P_after) * P_after' * P_origin;
+    R_d = P_after * R_Np / P_after;
     
 end

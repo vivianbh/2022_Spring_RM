@@ -51,7 +51,7 @@ time = toc;
 
 fprintf("Linear Optimization time (s): %f \n",time)
 % caculate the error
-np_LSM = R_d * P + rep1, Np );
+np_LSM = R_d * P + repmat( tr, 1, Np );
 LSM_norm = norm(X-np_LSM);
 fprintf("Linear Optimnization Error:　%f\n\n", LSM_norm );
 
