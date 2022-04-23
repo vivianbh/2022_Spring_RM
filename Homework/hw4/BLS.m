@@ -2,8 +2,8 @@ function [t] = BLS(q, t, acc, error, J)
     % q is variable
     % t is step size
     
-    alpha = 0.3;
-    beta = 0.7;
+    alpha = 0.08;
+    beta = 0.65;
     
     e = error( q(1), q(2), q(3), q(4), acc(1), acc(2), acc(3));
     J_q = J( q(1), q(2), q(3), q(4) );
