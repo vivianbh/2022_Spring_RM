@@ -38,12 +38,12 @@ int main(int argc, char** argv)
 	ROS_INFO("Started waypoint_publisher.");
 
 	ros::V_string args;
-	//ros::removeROSArgs(argc, argv, args);
+	ros::removeROSArgs(argc, argv, args);
 
 	double delay;
 	//std::vector<std::string> args;
 
-	nh.getParam("/args", args);
+	//nh.getParam("/args", args);
 	//ROS_INFO("Here!");
 	//std::cout << "check: " << args.at(0) << std::endl;
 
