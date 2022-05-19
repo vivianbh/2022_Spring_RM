@@ -46,11 +46,11 @@ void updateTagPosition(const apriltag_ros::AprilTagDetectionArray& msg){
     // ++ToDo++ need consider if the orientation of quadcopter change
     
     R1 <<       1,         0,        0,
-	            0,   cos(rx),  sin(rx),
-	            0,  -sin(rx),  cos(rx);
-	R2 << cos(rz),  sin(rz),         0,
-	     -sin(rz),  cos(rz),         0,
-			    0,	      0,         1;                             cos(ry)*sin(rx),                            cos(ry)*cos(rx);
+	        0,   cos(rx),  sin(rx),
+	        0,  -sin(rx),  cos(rx);
+    R2 << cos(rz),  sin(rz),         0,
+	 -sin(rz),  cos(rz),         0,
+	        0,        0,         1;
     position_err = R2*R1*apriltag_err;
 
     ROS_INFO("position error relate to camera: [%f, %f, %f].",
