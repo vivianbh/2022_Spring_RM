@@ -15,7 +15,7 @@
   <env name="GAZEBO_RESOURCE_PATH" value="${GAZEBO_RESOURCE_PATH}:$(find rotors_gazebo)/models"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find rotors_gazebo)/worlds/$(arg world_name).world" />
+    <arg name="world_name" value="$(find quadcopter_landing)/worlds/$(arg world_name).world" />
     <!-- <arg name="debug" value="true"/> -->
     <arg name="paused" value="true"/>
     <arg name="gui" value="true"/>
@@ -56,5 +56,7 @@
       <arg name="y" value="19.0"/>
       <arg name="x" value="15.2"/>
   </include>
+
+  <node name="spawn_models" pkg="gazebo_ros_link_attacher" type="spawn_models.py" output="screen" />
 
 </launch>
